@@ -1,1 +1,67 @@
-/* Стилизация кнопки */
+
+.block{
+    display: block;
+    position: relative;
+    width:100%;
+    text-align: center;
+}
+
+.button{
+    display: inline-block;
+    padding:10px;
+}
+
+.button__item{
+    display: inline-block;
+    min-width: 190px;
+    width:auto;
+    height:48px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 48px;
+    color:var(--white);
+    cursor: pointer;
+    margin:10px 40px;
+    border:none;
+}
+
+.button__item--primary{
+    background: var(--primary);
+    transition: opacity 500ms ease-in-out, background 500ms ease-in-out;
+}
+.button__item--primary:hover,
+.button__item--primary:active,
+.button__item--primary:focus{
+    background: #2342C0;
+}
+
+.button__item--secondary{
+    background: var(--secondary);
+    transition: opacity 500ms ease-in-out, background 500ms ease-in-out;
+}
+.button__item--secondary:hover,
+.button__item--secondary:active,
+.button__item--secondary:focus{
+    background: #5028C6;
+}
+
+.button__item--alternate{
+    background: var(--white);
+    color:var(--grey-4);
+    border: 1px solid var(--grey-3);
+    transition: opacity 500ms ease-in-out, border 500ms ease-in-out;
+}
+.button__item--alternate:hover,
+.button__item--alternate:active,
+.button__item--alternate:focus{
+    border: 1px solid var(--black);
+}
+
+.button__item--primary:disabled,
+.button__item--secondary:disabled,
+.button__item--alternate:disabled{
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+}
