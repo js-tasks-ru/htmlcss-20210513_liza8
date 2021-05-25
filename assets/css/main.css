@@ -2,6 +2,7 @@
 @import '../fonts/fonts.css';
 @import '../../components/header/header.css';
 @import '../../components/footer/footer.css';
+@import '../../components/cards/card.css';
 
 
 :root {
@@ -37,6 +38,11 @@ main{
     display: block;
     position: relative;
     background: #F9FAFC;
-    width:100vw;
-    height:100vh;
+    width:100%;
+}
+.block-page{
+    display: block;
+    max-width:1110px;
+    margin:0 auto;
+    padding:50px 0;
 }
