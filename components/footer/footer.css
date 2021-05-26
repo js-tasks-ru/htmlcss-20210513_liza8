@@ -1,4 +1,4 @@
-footer{
+.footer{
     display: block;
     position: relative;
     width:640px;
@@ -8,13 +8,13 @@ footer{
     color: var(--black);
 }
 
-h3{
+.footer__title{
     font-weight: 500;
     font-size: 38px;
     line-height: 48px;
 }
 
-p{
+.footer__text{
     font-size: 16px;
     line-height: 24px;
     max-width: 800px;
