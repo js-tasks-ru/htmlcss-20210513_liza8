@@ -1,0 +1,103 @@
+.page{
+    display:block;
+    position: relative;
+    padding:40px;
+}
+
+.histograme{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding:24px;
+    min-width: 354px;
+    width:auto;
+    height: 185px;
+}
+
+.histograme__header{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+}
+.histograme__counter{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.histograme__counter-title{
+    font-size: 16px;
+    line-height: 24px;
+    color:var(--black);
+    opacity: .8;
+}
+.histograme__counter-sum{
+    font-size: 20px;
+    line-height: 26px;
+    color:var(--black);
+    margin:10px 0 0 0;
+}
+.histograme__link{
+    font-size: 16px;
+    line-height: 24px;
+    color:#4263EB;
+    cursor:pointer;
+}
+
+.histograme__content{
+    align-self: flex-end;
+    width:100%;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.histograme__content-item{
+    background: var( --blue);
+    width: calc(100% / 25);
+    margin:0 1px;
+}
+.histograme__content-item:nth-child(1),
+.histograme__content-item:nth-child(5),
+.histograme__content-item:nth-child(10),
+.histograme__content-item:nth-child(15),
+.histograme__content-item:nth-child(20){
+    height: 60%;
+}
+
+.histograme__content-item:nth-child(2),
+.histograme__content-item:nth-child(6),
+.histograme__content-item:nth-child(11),
+.histograme__content-item:nth-child(16),
+.histograme__content-item:nth-child(21){
+    height: 30%;
+}
+
+.histograme__content-item:nth-child(3),
+.histograme__content-item:nth-child(7),
+.histograme__content-item:nth-child(12),
+.histograme__content-item:nth-child(17),
+.histograme__content-item:nth-child(22),
+.histograme__content-item:nth-child(25){
+    height: 90%;
+}
+
+.histograme__content-item:nth-child(4),
+.histograme__content-item:nth-child(8),
+.histograme__content-item:nth-child(13),
+.histograme__content-item:nth-child(18),
+.histograme__content-item:nth-child(23){
+    height: 15%;
+}
+
+.histograme__content-item:nth-child(9),
+.histograme__content-item:nth-child(14),
+.histograme__content-item:nth-child(19),
+.histograme__content-item:nth-child(24){
+    height: 45%;
+}

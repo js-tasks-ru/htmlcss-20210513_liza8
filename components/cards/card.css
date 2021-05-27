@@ -1,0 +1,31 @@
+.card{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width:100%;
+    gap:20px;
+}
+
+.card__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--white);
+    min-width:350px;
+    height: 367px;
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+    gap:20px;
+}
+
+.card__preview{
+
+}
+
+.card__title{
+    font-size: 21px;
+    line-height: 25px;
+    color:var(--black);
+}
