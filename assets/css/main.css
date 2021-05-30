@@ -40,7 +40,7 @@ main{
     background: #F9FAFC;
     width:100%;
 }
-.block-page{
+.container{
     display: block;
     max-width:1110px;
     margin:0 auto;

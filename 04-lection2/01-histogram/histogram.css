@@ -1,8 +1,3 @@
-.page{
-    display:block;
-    position: relative;
-    padding:40px;
-}
 
 .histograme{
     display: inline-flex;
@@ -13,8 +8,6 @@
     border-radius: 8px;
     padding:24px;
     min-width: 354px;
-    width:auto;
-    height: 185px;
 }
 
 .histograme__header{
@@ -24,7 +17,7 @@
     width:100%;
 }
 .histograme__counter{
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -43,18 +36,17 @@
 .histograme__link{
     font-size: 16px;
     line-height: 24px;
-    color:#4263EB;
+    color:var(--blue);
     cursor:pointer;
 }
 
 .histograme__content{
-    align-self: flex-end;
     width:100%;
     height: 50px;
+    margin-top:40px;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-end;
 }
 .histograme__content-item{

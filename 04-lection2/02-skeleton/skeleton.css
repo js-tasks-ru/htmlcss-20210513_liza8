@@ -1,9 +1,3 @@
-.page{
-    display:block;
-    position: relative;
-    padding:40px;
-}
-
 .skeleton{
     display: inline-flex;
     flex-direction: column;
@@ -12,9 +6,7 @@
     box-sizing: border-box;
     border-radius: 8px;
     padding:24px;
-    min-width: 579px;
-    width:auto;
-    height: 192px;
+    width:100%;
 }
 
 .skeleton__header{
@@ -41,7 +33,7 @@
     width:100%;
 }
 
-span{
+.skeleton__text-line{
     display: block;
     height: 20px;
     width:100%;
