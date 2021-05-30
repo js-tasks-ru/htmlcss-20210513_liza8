@@ -5,14 +5,40 @@
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./button.css">
     </head>
+
+    <style>
+        .block-button{
+            display: block;
+            position: relative;
+            width:100%;
+            text-align: center;
+        }
+
+        .block-button > .button{
+            margin:10px 40px;
+        }
+
+        .button{
+            display: inline-block;
+            width:auto;
+            height:48px;
+            border-radius: 8px;
+            padding: 15px 66px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1;
+            color:var(--white);
+            cursor: pointer;
+            border:none;
+        }
+    </style>
+
     <body>
 
     <div class="block-button">
         <button class="button button--primary">Primary</button>
 
-        <div class="button button--primary" disabled>
-            Primary
-        </div>
+        <button class="button button--primary" disabled>Primary</button>
     </div>
 
     <div class="block-button">

@@ -41,14 +41,3 @@ main{
     width:100vw;
     height:100vh;
 }
-.block-button{
-    display: block;
-    position: relative;
-    width:100%;
-    text-align: center;
-}
-.block-accordion{
-    padding:10px 0;
-    max-width: 800px;
-    margin:0 auto;
-}

@@ -1,21 +1,3 @@
-.block-button > .button{
-    margin:10px 40px;
-}
-
-.button{
-    display: inline-block;
-    min-width: 190px;
-    width:auto;
-    height:48px;
-    border-radius: 8px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 48px;
-    color:var(--white);
-    cursor: pointer;
-    border:none;
-}
-
 .button--primary{
     background: var(--primary);
     transition: opacity 500ms ease-in-out, background 500ms ease-in-out;
