@@ -7,6 +7,7 @@
     border-radius: 8px;
     padding:24px;
     width:100%;
+    gap:20px;
 }
 
 .skeleton__header{
@@ -19,9 +20,9 @@
 .skeleton__img{
     display: block;
     width: 80px;
-    height: 64px;
+    height: 70px;
     background: var(--grey-2);
-    border-radius: 32px;
+    border-radius: 40px;
 }
 
 .skeleton__title,
@@ -45,4 +46,11 @@
 }
 .skeleton__title span:nth-child(2){
     width:60%;
+}
+
+.skeleton__text span:nth-child(1){
+    width:90%;
+}
+.skeleton__text span:nth-child(2){
+    width:80%;
 }
