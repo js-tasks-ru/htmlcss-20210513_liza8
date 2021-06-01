@@ -1,7 +1,8 @@
-header{
+.header{
     display: inline-block;
     position: relative;
     width:100%;
+    padding:65px 160px;
 }
 
 .header__title{
