@@ -1,0 +1,46 @@
+.calendar{
+    display: inline-grid;
+    place-items: center;
+    grid-template-rows: auto 1fr;
+    grid-gap:20px;
+    padding:30px;
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.calendar__title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--grey-5);
+}
+
+.calendar__date{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    place-items: stretch / center;
+}
+
+.calendar__date-title{
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--grey-5);
+}
+
+.calendar__date-day{
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--grey-6);
+    padding:10px;
+}
+
+.calendar__date-day--choose{
+    background: var(--blue);
+    color:var(--white);
+}
+
+.calendar__date-day--period{
+    background: rgba(160, 177, 245, 0.2);
+}

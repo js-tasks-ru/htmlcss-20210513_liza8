@@ -1,0 +1,23 @@
+.page-teplate__content{
+    background: var(--white);
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+    height: 100vh;
+}
+.page-teplate__menu{}
+
+.page-teplate__header{
+    display: grid;
+    grid-template: auto/ 1fr 1fr;
+    width:100%;
+    align-items: center;
+}
+.page-teplate__wrapper{
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    width:100%;
+    height: 100%;
+}
+.color__grey-3{
+    color: var(--grey-3);
+}
