@@ -3,42 +3,55 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="./assets/css/main.css">
+
+        <style>
+            .cards{
+                display: inline-flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                width:100%;
+                gap:20px;
+            }
+        </style>
     </head>
   
     <body>
         <header class="header">
-            <div class="header__title">Reusable component library</div>
+            <div class="container">
+                <div class="header__title">Reusable component library</div>
+            </div>
         </header>
 
         <main>
             <div class="container">
-                <div class="card">
-                    <div class="card__item">
+                <div class="cards">
+                    <div class="card">
                         <div class="card__preview"></div>
                         <div class="card__title">Tooltip</div>
                     </div>
 
-                    <div class="card__item">
+                    <div class="card">
                         <div class="card__preview"></div>
                         <div class="card__title">Custom form elements</div>
                     </div>
 
-                    <div class="card__item">
+                    <div class="card">
                         <div class="card__preview"></div>
                         <div class="card__title">Calendar</div>
                     </div>
 
-                    <div class="card__item">
+                    <div class="card">
                         <div class="card__preview"></div>
                         <div class="card__title">Modal dialog</div>
                     </div>
 
-                    <div class="card__item">
+                    <div class="card">
                         <div class="card__preview"></div>
                         <div class="card__title">Histogram</div>
                     </div>
 
-                    <div class="card__item">
+                    <div class="card">
                         <div class="card__preview"></div>
                         <div class="card__title">Avatar</div>
                     </div>

@@ -37,7 +37,7 @@
 }
 
 .calendar__date-day--choose{
-    background: var(--blue-1);
+    background: var(--blue);
     color:var(--white);
 }
 

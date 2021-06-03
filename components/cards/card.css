@@ -1,13 +1,4 @@
 .card{
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width:100%;
-    gap:20px;
-}
-
-.card__item{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
