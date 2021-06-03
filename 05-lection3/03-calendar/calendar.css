@@ -1,7 +1,7 @@
 .calendar{
     display: inline-grid;
-    grid-template: auto 1fr/ auto;
     place-items: center;
+    grid-template-rows: auto 1fr;
     grid-gap:20px;
     padding:30px;
     background: var(--white);
@@ -19,8 +19,8 @@
 
 .calendar__date{
     display: grid;
-    grid-template: repeat(6,  1fr) / repeat(7, 1fr);
-    place-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    place-items: stretch / center;
 }
 
 .calendar__date-title{
