@@ -4,8 +4,47 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./input.css">
+
+        <style>
+            .wrapper{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                background: var(--white);
+                height: 100vh;
+            }
+        </style>
     </head>
+
     <body>
+
+    <div class="wrapper">
+
+        <div class="input">
+            <label for="input1" class="input__label">Label</label>
+            <input type="text" id="input1" class="input__field  input__normal" placeholder="Placeholder"/>
+        </div>
+
+        <div class="input">
+            <label for="input2" class="input__label">Focus</label>
+            <input type="text" id="input2" class="input__field  input__focus" placeholder="Filled Input"/>
+        </div>
+
+        <div class="input">
+            <label for="input3" class="input__label">Success</label>
+            <input type="text" id="input3" class="input__field  input__success" placeholder="Success"/>
+            <span class="input__icon"></span>
+        </div>
+
+        <div class="input">
+            <label for="input4" class="input__label">Error</label>
+            <input type="text" id="input4" class="input__field input__invalid" placeholder="Error"/>
+            <span class="input__icon"></span>
+        </div>
+
+    </div>
 
     </body>
 </html>
