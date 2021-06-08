@@ -4,9 +4,36 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./modal.css">
+        <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
         <title>Modal</title>
+
+        <style>
+            .wrapper{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                background: var(--grey-2);
+                height: 100vh;
+            }
+        </style>
     </head>
     <body>
+
+        <div class="wrapper">
+
+        <button class="button button--primary" id="modal-open">Open modal</button>
+
+        <div class="modal" id="modal">
+            <div class="modal__close" id="modal-close"></div>
+            <div class="modal__title">Modal title</div>
+            <div class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+        </div>
+
+        </div>
+
+
     </body>
     <script src="./index.js"></script> 
 </html>
