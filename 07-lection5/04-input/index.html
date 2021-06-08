@@ -10,7 +10,7 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-around;
                 flex-wrap: wrap;
                 background: var(--white);
                 height: 100vh;
@@ -24,23 +24,23 @@
 
         <div class="input">
             <label for="input1" class="input__label">Label</label>
-            <input type="text" id="input1" class="input__field  input__normal" placeholder="Placeholder"/>
+            <input type="text" id="input1" class="input__field  input--normal" placeholder="Placeholder"/>
         </div>
 
         <div class="input">
             <label for="input2" class="input__label">Focus</label>
-            <input type="text" id="input2" class="input__field  input__focus" placeholder="Filled Input"/>
+            <input type="text" id="input2" class="input__field" placeholder="Filled Input"/>
         </div>
 
         <div class="input">
             <label for="input3" class="input__label">Success</label>
-            <input type="text" id="input3" class="input__field  input__success" placeholder="Success"/>
+            <input type="text" id="input3" class="input__field  input--success" placeholder="Success"/>
             <span class="input__icon"></span>
         </div>
 
         <div class="input">
             <label for="input4" class="input__label">Error</label>
-            <input type="text" id="input4" class="input__field input__invalid" placeholder="Error"/>
+            <input type="text" id="input4" class="input__field input--invalid" placeholder="Error"/>
             <span class="input__icon"></span>
         </div>
 

@@ -1,6 +1,6 @@
 .input{
     position: relative;
-    padding:20px;
+    padding:20px 0;
     min-width: 350px;
 }
 
@@ -20,36 +20,35 @@
     padding:15px 25px;
     margin-top:10px;
     border: 1px solid #DDE2E5;
-    box-sizing: border-box;
     border-radius: 8px;
     color:var(--grey-2);
     width:100%;
+    box-sizing: border-box;
 }
-.input__normal::-webkit-input-placeholder {
-    opacity: 0.5;
-}
-
 .input__field:focus{
     border: 1px solid var(--blue);
     outline: none;
 }
-
-.input__invalid:focus{
+.input--normal::-webkit-input-placeholder {
+    opacity: 0.5;
+}
+.input--invalid:focus{
     border: 1px solid var(--red);
 }
 .input__icon{
     display: block;
     position: absolute;
     top:50%;
-    right:40px;
+    right:18px;
     width:24px;
     height:24px;
+    transform: translate(0, -50%);
 }
 
-.input__invalid ~ .input__icon{
+.input--invalid ~ .input__icon{
     background: url(image/icon-error.svg);
 }
 
-.input__success ~ .input__icon{
+.input--success ~ .input__icon{
     background: url(image/icon-success.svg);
 }
