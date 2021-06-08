@@ -4,8 +4,34 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./checkbox.css">
+
+        <style>
+            .wrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background: var(--white);
+            }
+        </style>
+
     </head>
     <body>
+
+    <div class="wrapper">
+
+        <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" id="default"/>
+            <label class="checkbox__label" for="default">Default</label>
+        </div>
+
+        <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" id="disabled" disabled/>
+            <label class="checkbox__label" for="disabled">Default</label>
+        </div>
+
+    </div>
 
     </body>
 </html>

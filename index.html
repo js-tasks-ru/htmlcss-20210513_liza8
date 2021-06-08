@@ -24,6 +24,25 @@
         </header>
 
         <main>
+            <div class="tabs">
+                <input type="radio" id="#all-tab" checked>
+                <input type="radio" id="#atoms-tab">
+                <input type="radio" id="#simple-tab">
+
+                <div class="tabs__scroller">
+                    <label for="#all-tab">All components</label>
+                    <label for="#atoms-tab">Complex</label>
+                    <label for="#simple-tab">Simple</label>
+                </div>
+
+                <div class="tabs__content tabs__content_complex">
+                    <!-- Сложные компоненты -->
+                </div>
+                <div class="tabs__content tabs__content_simple">
+                    <!-- Простые компоненты -->
+                </div>
+            </div>
+
             <div class="container">
                 <div class="cards">
                     <div class="card">
