@@ -1,0 +1,81 @@
+.toogle{
+    display: block;
+    position: relative;
+    margin-top:20px;
+}
+
+.toogle__label{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 52px;
+    height: 28px;
+    background:var(--white);
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 16px;
+
+    transition: background .5s;
+}
+
+.toogle__label:before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    width: 26px;
+    height: 26px;
+    background: var(--grey-2);
+    border: 1px solid var(--white);
+    box-sizing: border-box;
+    border-radius: 50%;
+    transform: translate(0);
+
+    transition: left .5s, transform .5s, background .5s, border .5s;
+}
+.toogle__label:after{
+    content:"Off";
+    position: absolute;
+    top:50%;
+    left:100%;
+    width: 100%;
+    height: 24px;
+    font-size:16px;
+    line-height: 24px;
+    color:var(--grey-4);
+    transform: translate(10px, -50%);
+}
+.toogle__input{
+    width: 0px;
+    height: 0px;
+}
+
+.toogle__input:focus ~ .toogle__label{
+    text-decoration: underline;
+}
+.toogle__input:checked ~ .toogle__label,
+.toogle__input:active ~ .toogle__label {
+    background: var(--blue);
+}
+.toogle__input:checked ~ .toogle__label:before,
+.toogle__input:active ~ .toogle__label:before{
+    left:100%;
+    background: var(--white);
+    border:1px solid var(--blue);
+    transform: translate(-100%);
+}
+
+.toogle__input:checked ~ .toogle__label:after,
+.toogle__input:active ~ .toogle__label:after{
+    content:"On";
+}
+.toogle__input:disabled ~ .toogle__label{
+    background:var(--grey-2);
+    cursor: default;
+    pointer-events: none;
+}
+.toogle__input:disabled ~ .toogle__label:before{
+    background: var(--grey-3);
+    border: 1px solid var(--grey-2);
+}
