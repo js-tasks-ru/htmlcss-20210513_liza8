@@ -30,6 +30,10 @@
 .radio__input{
     width: 0px;
     height: 0px;
+    outline: none;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
 }
 .radio__input:focus ~ .radio__label{
     text-decoration: underline;

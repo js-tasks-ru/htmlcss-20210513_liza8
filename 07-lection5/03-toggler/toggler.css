@@ -12,7 +12,6 @@
     height: 28px;
     background:var(--white);
     border: 1px solid var(--grey-2);
-    box-sizing: border-box;
     border-radius: 16px;
 
     transition: background .5s;
@@ -24,11 +23,10 @@
     top:0;
     left:0;
     right: 0;
-    width: 26px;
-    height: 26px;
+    width: 24px;
+    height: 24px;
     background: var(--grey-2);
-    border: 1px solid var(--white);
-    box-sizing: border-box;
+    border: 2px solid var(--white);
     border-radius: 50%;
     transform: translate(0);
 
@@ -49,6 +47,10 @@
 .toogle__input{
     width: 0px;
     height: 0px;
+    outline: none;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
 }
 
 .toogle__input:focus ~ .toogle__label{
@@ -62,7 +64,7 @@
 .toogle__input:active ~ .toogle__label:before{
     left:100%;
     background: var(--white);
-    border:1px solid var(--blue);
+    border:2px solid var(--blue);
     transform: translate(-100%);
 }
 
@@ -77,5 +79,5 @@
 }
 .toogle__input:disabled ~ .toogle__label:before{
     background: var(--grey-3);
-    border: 1px solid var(--grey-2);
+    border: 2px solid var(--grey-2);
 }
