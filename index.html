@@ -3,29 +3,52 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./components/tabs/tab.css">
 
         <style>
-            .cards{
-                display: inline-flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
+            .wrapper{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                margin:0;
                 width:100%;
-                gap:20px;
+            }
+            .tabs__wrapper{
+                display: inline-block;
+                width:100%;
+                border-bottom:1px solid var(--grey-2);
+                padding: 0 0 5px 0;
             }
         </style>
     </head>
-  
+
     <body>
         <header class="header">
             <div class="container">
+                <div class="header__logo"></div>
                 <div class="header__title">Reusable component library</div>
             </div>
         </header>
 
         <main>
-            <div class="container">
-                <div class="cards">
+
+            <div class="wrapper">
+
+                <input class="tab__input" id="all" name="group" type="radio" checked>
+                <input class="tab__input" id="atoms" name="group" type="radio">
+                <input class="tab__input" id="simple" name="group" type="radio">
+
+                <div class="tabs">
+                    <div class="tabs__wrapper">
+                    <div class="container">
+                        <label class="tab__label" id="all-tab" for="all">All components</label>
+                        <label class="tab__label" id="atoms-tab" for="atoms">Complex</label>
+                        <label class="tab__label" id="simple-tab" for="simple">Simple</label>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="tabs__content tabs__content_complex">
                     <div class="card">
                         <div class="card__preview"></div>
                         <div class="card__title">Tooltip</div>
@@ -36,6 +59,13 @@
                         <div class="card__title">Custom form elements</div>
                     </div>
 
+                    <div class="card">
+                        <div class="card__preview"></div>
+                        <div class="card__title">Avatar</div>
+                    </div>
+                </div>
+
+                <div class="tabs__content tabs__content_simple">
                     <div class="card">
                         <div class="card__preview"></div>
                         <div class="card__title">Calendar</div>
@@ -49,11 +79,6 @@
                     <div class="card">
                         <div class="card__preview"></div>
                         <div class="card__title">Histogram</div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card__preview"></div>
-                        <div class="card__title">Avatar</div>
                     </div>
                 </div>
             </div>

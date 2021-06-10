@@ -4,8 +4,35 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./toggler.css">
-    </head>
-    <body>
 
+        <style>
+            .wrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background: var(--white);
+            }
+            .wrapper .toogle{
+                margin-top:20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+            <div class="toogle">
+                <input class="toogle__input" type="checkbox" id="default"/>
+                <label class="toogle__label" for="default"></label>
+            </div>
+
+            <div class="toogle">
+                <input class="toogle__input" type="checkbox" id="disabled" disabled/>
+                <label class="toogle__label" for="disabled"></label>
+            </div>
+
+        </div>
     </body>
 </html>
